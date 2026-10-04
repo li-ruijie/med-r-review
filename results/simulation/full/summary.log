@@ -1,0 +1,156 @@
+Summary statistics of the simulation. A cell is one scenario, estimator,
+effect, and scale. Correct cells: see is_correct() in 11_simulation_tables.R.
+
+outcome prevalence: 0.3426 (s12) to 0.4161 (s06)
+    P(Y = 1) of the binary-outcome scenarios, by numerical integration (07_simulation.R).
+
+failed fits: cmaverse-gcomp 0; lavaan-boot 0; lavaan-delta 0; medflex-impute 0; medflex-weight 0; mediation-boot 0; mediation-qb 0; regmedint-delta 0; robmed-mm 0
+    Failed fits per estimator over all scenarios and replications.
+
+extreme estimates: s28 medflex-weight PNDE clogor 2; s28 medflex-weight TNIE clogor 2; s32 medflex-weight PNDE clogor 1; s32 medflex-weight TNIE clogor 1; s44 medflex-weight PNDE clogor 3; s44 medflex-weight TNIE clogor 3; s48 medflex-weight PNDE clogor 1; s48 medflex-weight TNIE clogor 1
+    Cells with estimates of absolute size 1,000 or more, and their number in each cell.
+
+bias, correct, n = 1,000: md -0.0151 (s39 medflex-weight TNIE md); rd 0.0012 (s38 mediation-boot TNIE rd); logor 0.0058 (s38 medflex-impute TNIE logor); clogor 0.0151 (s36 medflex-weight PNDE clogor)
+    Largest absolute bias of a correct cell at n = 1,000, by scale.
+
+bias, correct, n = 1,000, no weighting: md -0.0027 (s37 mediation-boot PNDE md); rd 0.0012 (s38 mediation-boot TNIE rd); logor 0.0058 (s38 medflex-impute TNIE logor); clogor -0.0063 (s40 medflex-impute PNDE clogor)
+    As above, without medflex weighting.
+
+coverage, correct: 0.8000 (s07 medflex-weight TNIE md) to 0.9940 (s08 medflex-impute PNDE clogor)
+    Coverage of the correct cells, all sample sizes.
+
+coverage, correct, no weighting: 0.9220 (s09 regmedint-delta TNIE md) to 0.9940 (s08 medflex-impute PNDE clogor)
+    As above, without medflex weighting.
+
+coverage, delta TNIE, n = 100: 0.9220 (s09 regmedint-delta TNIE md) to 0.9540 (s05 regmedint-delta TNIE md)
+    Coverage of the delta-method TNIE intervals in correct cells.
+
+coverage, resampling TNIE, n = 100: 0.9310 (s07 medflex-impute TNIE md) to 0.9620 (s05 medflex-impute TNIE md)
+    Coverage of the bootstrap and quasi-Bayesian TNIE intervals in correct cells with a continuous outcome (the scenarios of the delta-method statistic), without medflex weighting.
+
+mediation, binary, n = 100, TNIE RD relative bias: mediation-qb -0.1156 (s02 mediation-qb TNIE rd) to -0.0798 (s08 mediation-qb TNIE rd); mediation-boot -0.0393 (s02 mediation-boot TNIE rd) to -0.0096 (s08 mediation-boot TNIE rd)
+    Bias over the true value of the quasi-Bayesian and bootstrap point estimates of mediation, binary outcome, normal errors, n = 100.
+
+mediation, binary, n = 100, TNIE RD bias over MCSE: mediation-qb -5.8258 (s08 mediation-qb TNIE rd) to -4.4359 (s02 mediation-qb TNIE rd); mediation-boot -1.6492 (s04 mediation-boot TNIE rd) to -0.6595 (s08 mediation-boot TNIE rd)
+    As above, bias over its Monte Carlo SE.
+
+coverage, medflex imputation, cond. log OR, n = 100: 0.9760 (s08 medflex-impute TNIE clogor) to 0.9940 (s08 medflex-impute PNDE clogor)
+    Coverage of medflex imputation on the conditional log OR scale at n = 100, correct cells, normal errors.
+
+medflex imputation, cond. log OR, n = 100, SE ratio: 1.1643 (s08 medflex-impute TNIE clogor) to 1.1848 (s04 medflex-impute TNIE clogor); 14.9632 (s04 medflex-impute PNDE clogor) to 17.3239 (s08 medflex-impute PNDE clogor)
+    Root mean square of the bootstrap standard errors over the empirical standard error, TNIE then PNDE, correct cells, normal errors.
+
+medflex imputation, cond. log OR, n = 100, median SE ratio: 1.1057 (s08 medflex-impute TNIE clogor) to 1.1190 (s04 medflex-impute TNIE clogor); 1.1079 (s04 medflex-impute PNDE clogor) to 1.2064 (s08 medflex-impute PNDE clogor)
+    As above, with the median of the bootstrap standard errors.
+
+medflex imputation, cond. log OR, n = 100, largest SE ratio: 2.1869 (s08 medflex-impute TNIE clogor) to 2.2457 (s04 medflex-impute TNIE clogor); 262.8338 (s04 medflex-impute PNDE clogor) to 290.7131 (s08 medflex-impute PNDE clogor)
+    As above, with the largest bootstrap standard error.
+
+medflex imputation, cond. log OR, n = 100, large SE share: 0.0000 (s04 medflex-impute TNIE clogor) to 0.0000 (s04 medflex-impute TNIE clogor); 0.1380 (s04 medflex-impute PNDE clogor) to 0.1380 (s04 medflex-impute PNDE clogor)
+    As above, share of replications with a bootstrap SE above three times the empirical SE.
+
+interval method, width change: 0.9681 (s47 mediation-boot/mediation-qb TNIE md) to 1.0460 (s20 mediation-boot/mediation-qb PNDE rd)
+    Median width with the bootstrap over the quasi-Bayesian (mediation) or delta-method (lavaan) interval, correct cells, without RD at n = 100.
+
+interval method, width change, RD n = 100: 1.0451 (s06 mediation-boot/mediation-qb PNDE rd) to 1.1220 (s04 mediation-boot/mediation-qb PNDE rd)
+    As above, RD cells at n = 100.
+
+same estimand, width spread: 1.0021 (s24 mediation-qb/mediation-boot TNIE rd) to 1.4049 (s35 medflex-weight/lavaan-delta TNIE md)
+    Widest over narrowest median width among the correct estimators of one scenario, effect, and scale, normal errors.
+
+same estimand, width spread, no weighting: 1.0000 (s06 medflex-impute/cmaverse-gcomp PNDE logor) to 1.2680 (s03 medflex-impute/lavaan-delta TNIE md)
+    As above, without medflex weighting.
+
+lavaan TNIE width: 0.7118 (s35 lavaan-delta/medflex-weight TNIE md) to 0.9209 (s03 lavaan-boot/medflex-weight TNIE md)
+    Median TNIE width of lavaan over that of each counterfactual estimator, continuous outcome, no interaction, normal errors.
+
+lavaan TNIE width, no weighting: 0.7886 (s03 lavaan-delta/medflex-impute TNIE md) to 0.9134 (s17 lavaan-boot/cmaverse-gcomp TNIE md)
+    As above, without medflex weighting.
+
+lavaan TNIE width, medflex imputation: 0.7886 (s03 lavaan-delta/medflex-impute TNIE md) to 0.8869 (s33 lavaan-boot/medflex-impute TNIE md)
+    As above, against medflex imputation only.
+
+medflex and CMAverse, log OR width: 0.9971 (s02 medflex-impute/cmaverse-gcomp PNDE logor) to 1.0620 (s06 medflex-impute/cmaverse-gcomp TNIE logor); 1.0151 (s18 medflex-weight/cmaverse-gcomp PNDE logor) to 1.1161 (s34 medflex-weight/cmaverse-gcomp TNIE logor)
+    Median width of medflex over CMAverse on the marginal log OR scale, correct cells, normal errors.
+
+omitted interaction, TNIE bias: binary -0.0757 (s45 robmed-mm TNIE md) to -0.0741 (s45 lavaan-boot TNIE md); continuous -0.1502 (s47 robmed-mm TNIE md) to -0.1490 (s47 lavaan-boot TNIE md)
+    robmed and lavaan, continuous outcome with interaction, n = 1,000, normal and t errors, by exposure.
+
+omitted interaction, TNIE coverage: binary 0.3580 (s45 robmed-mm TNIE md) to 0.5840 (s37 robmed-mm TNIE md); continuous 0.0000 (s39 lavaan-boot TNIE md) to 0.0310 (s47 lavaan-boot TNIE md)
+    As above, coverage.
+
+omitted interaction, PNDE bias: binary 0.0723 (s37 robmed-mm PNDE md) to 0.0761 (s45 robmed-mm PNDE md); continuous -0.0007 (s39 robmed-mm PNDE md) to 0.0001 (s47 lavaan-boot PNDE md)
+    As above, PNDE bias.
+
+omitted interaction, PNDE coverage: binary 0.6850 (s45 robmed-mm PNDE md) to 0.8380 (s37 robmed-mm PNDE md); continuous 0.8670 (s47 lavaan-delta PNDE md) to 0.9540 (s39 robmed-mm PNDE md)
+    As above, PNDE coverage.
+
+regmedint, binary, no interaction, bias: 0.0931 (s04 regmedint-delta PNDE clogor)
+    Closed form, binary outcome, normal errors, all n.
+
+regmedint, binary, no interaction, coverage: 0.9230 (s02 regmedint-delta TNIE clogor) to 0.9570 (s02 regmedint-delta PNDE clogor)
+    As above, coverage.
+
+regmedint, binary, interaction, PNDE bias, n = 1,000: 0.1672 (s38 regmedint-delta PNDE clogor) to 0.1697 (s40 regmedint-delta PNDE clogor)
+    Closed form, PNDE, cond. log OR, normal errors.
+
+regmedint, binary, interaction, PNDE truth: 0.4511 (s38 regmedint-delta PNDE clogor) to 0.4511 (s38 regmedint-delta PNDE clogor)
+    True cond. log OR of the PNDE.
+
+regmedint, binary, interaction, PNDE coverage, n = 1,000: 0.5860 (s40 regmedint-delta PNDE clogor) to 0.7930 (s38 regmedint-delta PNDE clogor)
+    As above, coverage.
+
+medflex weighting, coverage, normal errors: binary 0.9080 (s01 medflex-weight TNIE md) to 0.9580 (s02 medflex-weight TNIE logor); continuous 0.8000 (s07 medflex-weight TNIE md) to 0.9520 (s04 medflex-weight TNIE clogor); binary 0.9380 (s21 medflex-weight PNDE md) to 0.9760 (s06 medflex-weight PNDE logor); continuous 0.8790 (s23 medflex-weight PNDE md) to 0.9890 (s08 medflex-weight PNDE clogor)
+    All cells with normal errors, by exposure, TNIE then PNDE.
+
+medflex weighting, continuous exposure and outcome, coverage: 0.8000 (s07 medflex-weight TNIE md) to 0.9160 (s35 medflex-weight PNDE md)
+    Normal errors, every n, with or without the interaction.
+
+medflex weighting, continuous exposure and outcome, SE ratio: 0.8448 (s23 medflex-weight PNDE md) to 0.9497 (s03 medflex-weight PNDE md)
+    Root mean square of the bootstrap standard errors over the empirical standard error, as above.
+
+medflex weighting, continuous exposure and outcome, TNIE bias over empirical SE: -0.5599 (s07 medflex-weight TNIE md) to -0.1014 (s35 medflex-weight TNIE md)
+    As above, TNIE only.
+
+medflex weighting, binary outcome, largest SE ratio: binary 1.1096 (s38 medflex-weight PNDE logor) to 50211561696847.5078 (s02 medflex-weight PNDE logor); continuous 16501783729320.4375 (s04 medflex-weight TNIE clogor) to 689131881743784.5000 (s20 medflex-weight TNIE clogor)
+    Largest bootstrap standard error over the empirical standard error, normal errors, by exposure, every n and both effects.
+
+medflex weighting, binary outcome, binary exposure, SE ratio above 1,000: s02 medflex-weight PNDE logor 5.021e+13
+    As above, every binary-exposure cell whose largest ratio exceeds 1,000.
+
+medflex weighting, binary outcome, continuous exposure, n = 100, PNDE large SE share: 0.1140 (s08 medflex-weight PNDE clogor) to 0.1380 (s04 medflex-weight PNDE clogor)
+    Share of replications with a bootstrap SE above three times the empirical SE, normal errors.
+
+medflex weighting, binary outcome, continuous exposure, n = 100, PNDE coverage: 0.9870 (s04 medflex-weight PNDE clogor) to 0.9890 (s08 medflex-weight PNDE clogor)
+    As above, coverage.
+
+medflex weighting, t errors, empirical SE: n = 100: 0.2446; n = 300: 0.4046; n = 1,000: 1.1404
+    TNIE, continuous outcome, mean over the four t-error scenarios at each n.
+
+medflex weighting, t errors, coverage: 0.2580 (s47 medflex-weight TNIE md) to 0.9740 (s16 medflex-weight PNDE clogor)
+    All cells with t errors.
+
+robmed over lavaan, t errors, width: 0.7520 (s41 robmed-mm/lavaan-delta TNIE md) to 0.8498 (s09 robmed-mm/lavaan-delta PNDE md)
+    Median width of robmed over lavaan, continuous outcome, no interaction, t errors.
+
+coverage, t errors, correct, no weighting: 0.9220 (s09 regmedint-delta TNIE md) to 0.9660 (s29 mediation-qb PNDE md)
+    Coverage of the correct cells under t errors (continuous outcome), without medflex weighting and robmed.
+
+bias, t errors, correct, no weighting: -0.0048 (s09 lavaan-boot PNDE md)
+    As above, largest absolute bias.
+
+robmed, t errors, coverage: 0.9290 (s11 robmed-mm PNDE md) to 0.9590 (s43 robmed-mm PNDE md)
+    Coverage of robmed under t errors (continuous outcome, no interaction).
+
+robmed over lavaan, normal errors, width: 1.0837 (s35 robmed-mm/lavaan-boot PNDE md) to 1.1691 (s03 robmed-mm/lavaan-delta TNIE md)
+    Median width of robmed over lavaan, continuous outcome, no interaction, normal errors.
+
+runtime: cmaverse-gcomp 8.49 to 13.48; lavaan-boot 20.07 to 22.09; lavaan-delta 0.04 to 0.05; medflex-impute 4.66 to 22.22; medflex-weight 5.12 to 22.15; mediation-boot 6.23 to 10.14; mediation-qb 2.01 to 4.87; regmedint-delta 0.01 to 0.02; robmed-mm 0.09 to 0.28
+    Mean seconds per fit, smallest and largest over the three sample sizes.
+
+summary table, bias MCSE: 0.0003 (s40 mediation-qb TNIE rd) to 0.0046 (s38 regmedint-delta PNDE clogor)
+    Cells of the summary table, without medflex weighting under t errors.
+
+summary table, coverage MCSE: 0.0000 (s39 lavaan-boot TNIE md) to 0.0158 (s37 lavaan-delta TNIE md)
+    As above.
+

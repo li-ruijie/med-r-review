@@ -1,0 +1,99 @@
+Script: 03_robust_mediation.R
+Date:   2026-10-02 15:09:12.693769
+======================================================================== 
+
+Robust bootstrap test for indirect effect via regression
+
+x = treat
+y = p_harm
+m = emo
+
+Covariates:
+[1] age      educ_num female   income  
+
+Sample size: 265
+---
+Outcome variable: emo
+
+Coefficients:
+                 Data      Boot Std. Error z value Pr(>|z|)    
+(Intercept) 11.809984 11.823346   1.200432   9.849  < 2e-16 ***
+treat        1.466618  1.476160   0.447995   3.295 0.000984 ***
+age          0.007658  0.007416   0.011190   0.663 0.507493    
+educ_num    -1.110127 -1.108252   0.192272  -5.764 8.21e-09 ***
+female      -0.029649 -0.028008   0.364315  -0.077 0.938721    
+income      -0.033820 -0.034657   0.053345  -0.650 0.515897    
+
+Robust residual standard error: 2.627 on 259 degrees of freedom
+Robust R-squared:  0.2105,	Adjusted robust R-squared:  0.1952
+Robust F-statistic: 2.545 on 5 and Inf DF,  p-value: 0.02609
+
+Robustness weights:
+No potential outliers with weight < 0.00038 detected.
+The minimum weight is 0.18.
+---
+Outcome variable: p_harm
+
+Coefficients:
+                 Data      Boot Std. Error z value Pr(>|z|)    
+(Intercept)  2.863180  2.883140   0.733258   3.932 8.43e-05 ***
+emo          0.463636  0.463160   0.029841  15.521  < 2e-16 ***
+treat       -0.071613 -0.072098   0.176836  -0.408    0.683    
+age          0.006070  0.005989   0.004722   1.268    0.205    
+educ_num    -0.128430 -0.129686   0.094180  -1.377    0.169    
+female      -0.171274 -0.172236   0.165739  -1.039    0.299    
+income       0.022815  0.022359   0.025005   0.894    0.371    
+
+Robust residual standard error: 1.214 on 258 degrees of freedom
+Robust R-squared:  0.5602,	Adjusted robust R-squared:   0.55
+Robust F-statistic: 6.994 on 6 and Inf DF,  p-value: 1.867e-07
+
+Robustness weights:
+Observation 100 is a potential outlier with weight 0
+---
+Total effect of x on y:
+        Data   Boot Std. Error z value Pr(>|z|)  
+treat 0.6084 0.6102     0.2694   2.265   0.0235 *
+
+Direct effect of x on y:
+          Data     Boot Std. Error z value Pr(>|z|)
+treat -0.07161 -0.07210    0.17684  -0.408    0.683
+
+Indirect effect of x on y:
+    Data   Boot  Lower Upper
+emo 0.68 0.6823 0.2679 1.091
+---
+Level of confidence: 95 %
+
+Number of bootstrap replicates: 10000
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ROBUST MEDIATION: MM-ESTIMATOR BOOTSTRAP (robmed)
+======================================================================== 
+Data:     framing (mediation package), n = 265 
+Path:     treat -> emo -> p_harm
+Method:   MM-estimator (robust = TRUE), 10000 bootstrap replicates
+Seed:     6489
+
+TIMING:  robmed 0.6s
+
+PATH COEFFICIENTS
+------------------------------------------------------------------------ 
+  a  path (treat -> emo):        1.467
+  b  path (emo -> p_harm):       0.464
+  c' path (direct effect):      -0.072
+  ab      (indirect effect):     0.680  95% CI [0.268, 1.091]
+  Minimum weight, mediator model:            0.18
+  Observations with weight 0, outcome model: 1 of 265
+
+INTERPRETATION
+------------------------------------------------------------------------ 
+  The indirect effect ab is the product of the a and b paths.
+  MM-estimators downweight outliers, providing estimates that are
+  resistant to influential observations while maintaining high
+  efficiency when data are well-behaved.
+  
+  Compare these estimates with 04_sem_mediation.R (ML via lavaan).
+  The difference between the two shows how much the observations
+  that MM-estimation downweights move the ML estimates.
+======================================================================== 

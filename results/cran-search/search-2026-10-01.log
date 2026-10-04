@@ -1,0 +1,13 @@
+Search date (UTC):            2026-10-01
+R version:                    R version 4.5.0 (2025-04-11)
+CRAN mirror:                  https://cloud.r-project.org
+Packages in CRAN database:    25285
+Keyword regex (PCRE, ignore case): \bmediat|\bindirect[ -]effect
+Keyword hits, title:          80
+Keyword hits, description:    131
+Keyword hits, either field:   133
+Task view commit:             9630cf2127f347ad3a2b05d9cfce85c149fa1fc5
+Task view mediation packages: 16 (bama, bmem, bmemLavaan, causalweight, cfdecomp, cit, DirectEffects, HIMA, medflex, mediation, mediationsens, MultisiteMediation, paths, regmedint, rmpw, twangMediation)
+Task view packages not on CRAN: 
+Task view packages without keyword hit: 
+Candidates (union):           133

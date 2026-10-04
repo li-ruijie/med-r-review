@@ -1,0 +1,138 @@
+package,source,screen,scope,role,note
+abima,search,include,dedicated,testing,Adaptive bootstrap test of the composite null of no mediation
+AgriDataTools,search,include,general,estimation,Dewey-Lu path coefficient analysis (direct and indirect effects) within an agricultural statistics suite
+AI4OfficialStats,search,exclude,,,"Keyword used in another sense (""AI-mediated"" statistics)"
+bama,search,include,dedicated,estimation,Bayesian high-dimensional mediation (BSLMM and PTG priors)
+banffIT,search,exclude,,,"Keyword used in another sense (""T-cell mediated rejection"")"
+BayesGmed,search,include,dedicated,estimation,Bayesian g-formula for causal mediation via Stan
+BayesianMediationA,search,include,dedicated,estimation,Bayesian general mediation analysis (Yu and Li)
+bayesics,search,include,general,estimation,Bayesian mediation following Imai et al. within a general Bayesian toolkit
+betaMC,search,exclude,,,"Monte Carlo intervals for standardized regression effect sizes, with indirect effects cited only as background"
+bmabart,search,include,dedicated,estimation,Bayesian mediation with BART
+bmem,search,include,dedicated,estimation,"Mediation with missing data (bootstrap with listwise or pairwise deletion, multiple imputation, or two-stage ML) and power analysis"
+bmemLavaan,search,include,dedicated,estimation,Mediation with missing and non-normal data via lavaan
+bmlm,search,include,dedicated,estimation,Bayesian multilevel (1-1-1) mediation via Stan
+brms,added,include,general,estimation,Added outside the search as Bayesian multivariate regression used for mediation and as a multilevelmediation backend
+bruceR,search,include,general,estimation,PROCESS-style mediation and moderation within a general toolkit
+budgetIVr,search,exclude,,,Instrumental variable method whose description uses the keyword for the exclusion restriction
+buzzMed,search,include,dedicated,estimation,Bayesian mediator selection in exploratory mediation models
+CauMedi,search,include,dedicated,estimation,Cell type-specific causal mediation for single-cell data
+causal.decomp,search,include,dedicated,decomposition,Causal decomposition of disparities via mediator imputation and product of coefficients
+causalplot,search,exclude,,,"Draws causal diagrams only, with no mediation estimation"
+causalweight,search,include,general,estimation,Double machine learning and weighting estimators of natural direct and indirect effects among other causal estimators
+ccmEstimator,search,include,dedicated,estimation,Comparative causal mediation across treatments
+CEDMr,search,include,general,estimation,Doubly robust causal mediation within a developmental-model toolkit
+cfdecomp,search,include,dedicated,decomposition,Counterfactual decomposition of group differences by g-formula Monte Carlo integration
+CIEE,search,include,dedicated,estimation,Direct effects in DAGs by estimating equations
+cit,search,include,dedicated,testing,Likelihood-based causal inference test of mediation in genomics
+cmmr,search,exclude,,,"Keyword used in another sense (""CEU Mass Mediator"" metabolite annotation service)"
+CMMs,search,include,dedicated,estimation,Compositional mediators
+COMMA,search,include,dedicated,estimation,Binary misclassified mediator
+connectcreds,search,exclude,,,"Keyword used in another sense (credentials ""mediated by"" Posit Connect)"
+crumble,search,include,dedicated,estimation,"Riesz-representer estimators for natural, organic, interventional, and recanting-twin effects"
+csmGmm,search,include,general,testing,Composite-null testing for large-scale mediation and other applications
+cTMed,search,include,dedicated,estimation,Continuous-time mediation effects
+DirectEffects,search,include,dedicated,estimation,"Controlled direct effects by sequential g-estimation, telescope matching, weighting, imputation, and augmented weighting"
+discovr,search,exclude,,,"Interactive tutorials and data for a textbook, with no mediation estimation functions of its own"
+DMAR,search,include,general,estimation,Mediation models with bootstrap intervals and likelihood ratio tests within a general toolkit
+EMAS,search,include,dedicated,estimation,Epigenome-wide mediation screening
+endogeneity,search,include,general,estimation,Recursive two-stage models for endogenous mediators in experiments
+ergMargins,search,include,general,estimation,Mediation (process analysis) in exponential random graph models
+ExactMed,search,include,dedicated,estimation,Exact regression-based mediation for binary outcomes
+exploratory,search,include,general,estimation,Point-and-click exploratory analyses that include mediation models
+frailtypack,search,include,general,estimation,Surrogate-endpoint models with a mediation analysis option for survival data
+funmediation,search,include,dedicated,estimation,Functional mediation with a distal outcome
+GEEmediate,search,include,dedicated,estimation,Difference method with GEE for natural direct and indirect effects
+GMAC,search,include,dedicated,testing,Genomic mediation testing with adaptive confounder adjustment
+gtregression,search,include,general,estimation,Wrapper for causal mediation analysis within a regression-table toolkit
+hdbma,search,include,dedicated,estimation,Bayesian high-dimensional mediation (adaptive Laplace priors via JAGS)
+HDMAADMM,search,include,dedicated,estimation,ADMM estimation for high-dimensional mediation
+HDMT,search,include,dedicated,testing,Multiple testing of high-dimensional composite mediation null hypotheses
+HIMA,search,include,dedicated,estimation,High-dimensional mediation by screening and penalized regression
+HRRI,search,exclude,,,"Keyword used in another sense (""mediated electrochemical"" measurement)"
+ieTest,search,include,dedicated,testing,Tests of the indirect effect in linear mediation
+iglm,search,exclude,,,"Keyword used in another sense (""network-mediated phenomena"")"
+iMediate,search,include,dedicated,estimation,Likelihood methods for mediation
+influential,search,exclude,,,Ranks network and omics features without estimating mediation
+intmed,search,include,dedicated,estimation,Interventional effects for up to three mediators
+JSmediation,search,include,dedicated,testing,Joint-significance tests
+lavaan,added,include,general,estimation,Added outside the search as the general SEM engine used for path and latent-variable mediation
+latenetwork,search,exclude,,,"Local average indirect effects of network spillover under instruments, which are spillover effects without a mediator"
+LDM,search,include,general,testing,Tests of mediation by the microbiome within a microbiome testing framework
+leakyIV,search,exclude,,,Instrumental variable method whose description uses the keyword for the exclusion restriction
+maczic,search,include,dedicated,estimation,Mediation for count and zero-inflated count data
+manymome,search,include,dedicated,estimation,"Indirect, conditional, and conditional indirect effects after model fitting"
+MarginalMediation,search,include,dedicated,estimation,Mediation on the average-marginal-effect scale
+MarZIC,search,include,dedicated,estimation,Zero-inflated compositional mediators
+MAZE,search,include,dedicated,estimation,Zero-inflated mediators
+MBESS,search,include,general,estimation,Mediation function within a general behavioral-science toolkit
+MED,search,include,dedicated,estimation,Non-parametric natural effects by tilted balancing
+medfit,search,include,dedicated,infrastructure,Infrastructure for fitting and extracting mediation models
+medflex,search,include,dedicated,estimation,Natural effect models (weighting and imputation)
+mediateP,search,include,dedicated,estimation,Product method for natural indirect effect and mediation proportion
+mediation,search,include,dedicated,estimation,Causal mediation analysis (Imai et al.) with sensitivity analysis
+mediationsens,search,include,dedicated,sensitivity,Simulation-based sensitivity analysis to unmeasured baseline confounding
+medmod,search,include,dedicated,estimation,Simple mediation and moderation via lavaan
+medScan,search,include,dedicated,testing,Large-scale single-mediator hypothesis testing
+MedZIsc,search,include,dedicated,estimation,Co-mediators in zero-inflated single-cell data
+messi,search,include,dedicated,estimation,Mediation with external summary statistics on the total effect
+MLFDR,search,include,dedicated,testing,High-dimensional mediation by local false discovery rates
+mlma,search,include,dedicated,estimation,Multilevel mediation with multilevel models on user-specified transformations
+mma,search,include,dedicated,estimation,Multiple mediation with MART and natural cubic splines
+mmabig,search,include,dedicated,estimation,Multiple mediation for large datasets with elastic net
+moderate.mediation,search,include,dedicated,estimation,Causal moderated mediation
+MRmediation,search,include,dedicated,estimation,Methylated region as mediator
+MRTAnalysis,search,include,general,estimation,Mediated causal excursion effects in micro-randomized trials among other analyses
+multilevelmediation,search,include,dedicated,estimation,Multilevel (1-1-1) mediation by bootstrap with nlme or glmmTMB fits or Bayesian estimation with brms
+multimedia,search,include,dedicated,estimation,Multimodal (microbiome) mediation
+multimediate,search,include,dedicated,estimation,Multiple uncausally related mediators
+MultisiteMediation,search,include,dedicated,estimation,Multisite trials by RMPW and method of moments
+mvfmr,search,exclude,,,Multivariable functional Mendelian randomization that treats mediation between exposures as a modeling scenario only
+mzipmed,search,include,dedicated,estimation,Zero-inflated count mediator or outcome via MZIP
+netmediate,search,include,dedicated,estimation,Average micro mediated effects in social networks
+odr,search,include,general,power,Optimal design and power including mediation designs
+paths,search,include,dedicated,estimation,Path-specific effects by imputation or imputation-based weighting with bias formulas
+piecewiseSEM,search,include,general,estimation,Indirect effects in piecewise SEM
+portvine,search,exclude,,,"Keyword matches a web address (""mediatum"")"
+power4mome,search,include,dedicated,power,Power for moderation and mediation in SEM and regression
+powerMediation,search,include,dedicated,power,Power and sample size for mediation tests
+psych,search,include,general,estimation,mediate() front end for regression-based mediation within a psychometrics toolkit
+purging,search,exclude,,,Residualizes regressors to remove mediation without estimating mediation effects
+pwr2ppl,search,include,general,power,Power analysis including mediation designs
+QuantPsyc,search,include,general,testing,Mediation test within a quantitative psychology toolkit
+RAMpath,search,include,general,estimation,Decomposes total effects into direct and indirect effects in SEM
+rbw,search,include,general,estimation,Controlled direct effects by residual balancing weights among other uses
+regmed,search,include,dedicated,estimation,Regularized mediation by penalized SEM
+regmedint,search,include,dedicated,estimation,Regression-based causal mediation with interaction and effect modification
+regsem,search,include,general,estimation,Exploratory mediation (XMed) within regularized SEM
+ria.test,search,include,dedicated,testing,Tests equality of natural effects and randomized interventional analogues
+rise,search,exclude,,,"Keyword used in another sense (""technology-mediated courses"")"
+RMediation,search,include,dedicated,testing,Confidence intervals for indirect effects (distribution of the product)
+rmedsem,search,include,dedicated,estimation,Mediation summaries for SEMs (Baron-Kenny and Zhao et al.)
+rmpw,search,include,dedicated,estimation,Ratio-of-mediator-probability weighting
+robmed,search,include,dedicated,estimation,Robust mediation by MM-estimation with fast-and-robust bootstrap
+robmedExtra,search,include,dedicated,infrastructure,Graphical interface and extensions for robmed
+RobustMediate,search,include,dedicated,estimation,IPW natural effects for continuous exposures with diagnostics and sensitivity analysis
+RsqMed,search,include,dedicated,estimation,R-squared total mediation effect size for high-dimensional mediators
+seminrExtras,search,include,general,estimation,Mediator contribution analysis in PLS-SEM
+SeqKat,search,exclude,,,"Keyword used in another sense (""APOBEC mediated"" kataegis)"
+sensmediation,search,include,dedicated,sensitivity,Parametric estimation and sensitivity analysis for direct and indirect effects
+silp,search,include,general,estimation,Mediation and moderation among latent variables (RAPI)
+SMAHP,search,include,dedicated,estimation,High-dimensional proteogenomic mediation with survival outcomes
+SMUT,search,include,dedicated,testing,Multi-SNP mediation intersection-union test
+Spower,search,include,general,power,Simulation-based power analysis including mediation
+SRMERS,search,include,general,estimation,Direct and indirect effects under shape restrictions
+statfidelity,search,exclude,,,"Keyword used in another sense (""AI-mediated"" statistics)"
+tmle,search,include,general,estimation,TMLE with an optional binary mediator for controlled direct effects
+TransHDM,search,include,dedicated,estimation,High-dimensional mediation by transfer learning
+tvmediation,search,include,dedicated,estimation,Time-varying mediation
+twangMediation,search,include,dedicated,estimation,Weighting estimators of natural effects
+UKBAnalytica,search,include,general,estimation,Mediation analysis within a UK Biobank workflow toolkit
+unvs.med,search,include,dedicated,estimation,Universal bootstrap approach for multi-category exposures and effect scales
+vaccine,search,include,general,estimation,Natural direct and indirect effects for immune correlates within a vaccine-trial toolkit
+WebPower,search,include,general,power,Power analysis including mediation
+wqrr,search,include,general,estimation,Wavelet quantile mediation for time series
+WRS2,search,include,general,estimation,Robust mediation within a robust-statistics toolkit
+wsMed,search,include,dedicated,estimation,Within-subject mediation via lavaan
+CMAverse,added,include,dedicated,estimation,Added outside the search as a GitHub-only suite of six cmest() approaches and a multistate approach
+medltmle,added,include,dedicated,estimation,"Added outside the search as a GitHub-only implementation of TMLE, weighting, and g-computation for longitudinal mediation"

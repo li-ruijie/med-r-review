@@ -1,0 +1,4 @@
+HIMA 2.3.4, 200 subsamples of n/2 = 150
+MCP      M1-M5 selected (% of subsamples): 89 97 68 21 70 | noise mediators selected at least once: 1, max noise frequency 0.005 | mean selected per subsample 3.44
+lasso    M1-M5 selected (% of subsamples): 89 98 66 21 71 | noise mediators selected at least once: 1, max noise frequency 0.005 | mean selected per subsample 3.45
+DBlasso  M1-M5 selected (% of subsamples): 87 96 68 22 81 | noise mediators selected at least once: 0, max noise frequency 0.000 | mean selected per subsample 3.52

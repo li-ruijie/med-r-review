@@ -1,0 +1,7 @@
+"scenario","rep","outcome","interaction","approach","spec","effect","est","message"
+"s36",5,"binary",FALSE,"weight","marginal","pnde",35308050604048.2,"system is computationally singular: reciprocal condition number = 6.06131e-18"
+"s36",5,"binary",FALSE,"weight","marginal","tnie",452158660643070,"system is computationally singular: reciprocal condition number = 6.06131e-18"
+"s36",13,"binary",FALSE,"weight","marginal","pnde",-97935910491867.5,"system is computationally singular: reciprocal condition number = 3.56568e-18"
+"s36",13,"binary",FALSE,"weight","marginal","tnie",187160567871250,"system is computationally singular: reciprocal condition number = 3.56568e-18"
+"s40",13,"binary",TRUE,"weight","marginal","pnde",81843623161577.8,"system is computationally singular: reciprocal condition number = 5.52196e-18"
+"s40",13,"binary",TRUE,"weight","marginal","tnie",-281793796583104,"system is computationally singular: reciprocal condition number = 5.52196e-18"
